@@ -1,0 +1,271 @@
+{
+	"info": {
+		"_postman_id": "1d6f1f89-b217-484c-a035-b86220262030",
+		"name": "Zarvest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Onboarding",
+			"item": [
+				{
+					"name": "onboarding",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/onboarding/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"onboarding",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "onboarding",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"firstName\": \"Gokulakrishnan\",\n  \"lastName\": \"Mohan\",\n  \"companyName\": \"KnowTrichy.com\",\n  \"workEmail\": \"gokul@knowtrichy.com\",\n  \"phone\": \"+917094308441\",\n  \"status\": \"inactive\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/onboarding/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"onboarding",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "onboarding additional info",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"personalEmail\": \"gokul1987@gmail.com\",\n  \"password\": \"123456\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/onboarding/additionalinfo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"onboarding",
+								"additionalinfo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "onboarding",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Gokulakrishnan\",\n    \"lastName\": \"Mohan\",\n    \"companyName\": \"Zarvest Inc\",\n    \"workEmail\": \"gokul@zarvest.com\",\n    \"phone\": \"7094308441\",\n    \"personalEmail\": \"gokul1987@gmail.com\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/onboarding/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"onboarding",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "personal email",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"personalEmail\": \"gokul@knowtrichy.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/onboarding/personalemail/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"onboarding",
+								"personalemail",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "password",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"password\": \"asdfasd\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/onboarding/password/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"onboarding",
+								"password",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send confirmation link",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/onboarding/sendConfirmationEmail/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"onboarding",
+								"sendConfirmationEmail",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "activation",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/onboarding/activation/3d5dbc83-098c-4131-891d-2392649e2025",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"onboarding",
+								"activation",
+								"3d5dbc83-098c-4131-891d-2392649e2025"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "onboarding",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/onboarding/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"onboarding",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
